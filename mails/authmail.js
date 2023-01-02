@@ -3,7 +3,7 @@ const sendmailotp = (email, subj, text) => {
   var transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 587,
-    secure: false,
+    secure: true,
     requireTLS: true,
     auth: {
       user: "arcadiaman123@gmail.com",
