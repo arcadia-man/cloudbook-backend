@@ -1,6 +1,6 @@
 //fetchuser is middleware function in which we check the authenticatio
 const jwt = require("jsonwebtoken");
-const JWT_sec = "thisisprtiamkuamrmauryaandmy";
+const JWT_sec = process.env.JWT_SECRET;
 
 const fetchuser = (req, res, next) => {
   //get the user form the jwt token and add id to req
