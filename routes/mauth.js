@@ -7,7 +7,7 @@ const bcrypt = require("bcryptjs");
 const { body, validationResult } = require("express-validator");
 const jwt = require("jsonwebtoken");
 const fetchuser = require("../middleware/fetchuser");
-const JWT_sec = "thisisprtiamkuamrmauryaandmy";
+const JWT_sec = process.env.JWT_SECRET;
 router.post(
   "/mcreateuser",
   [
